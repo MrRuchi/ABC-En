@@ -39,7 +39,9 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            ABC Entertainment
+            <Link href="/" color="inherit">
+              ABC Entertainment
+            </Link>
           </Typography>
           {localStorage.usertoken ? (
             <>
@@ -47,7 +49,7 @@ const Navbar = () => {
             </>
           ) : (
             <Typography className={classes.root1}>
-              <Link href="/login" onClick={logOut} color="inherit">
+              <Link href="/login" color="inherit">
                 Login
               </Link>
 
