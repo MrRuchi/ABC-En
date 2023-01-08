@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Button, Container, Grid, Typography } from "@material-ui/core";
 const Landing = () => {
   return (
     <>
@@ -19,10 +19,19 @@ const Landing = () => {
       <Typography
         align="center"
         variant="h6"
-        style={{ fontFamily: "cursive", color: "white" }}
+        style={{ fontFamily: "cursive", color: "Gray" }}
       >
         Checkout your Albums
       </Typography>
+      <Grid
+        container
+        xs={12}
+        style={{ justifyContent: "center", marginBlockStart: "40px" }}
+      >
+        <Button variant="contained" color="Primary">
+          Read More...
+        </Button>
+      </Grid>
     </>
   );
 };

@@ -45,7 +45,15 @@ const Navbar = () => {
           </Typography>
           {localStorage.usertoken ? (
             <>
-              <Link href="/CreateComponent">Albums</Link>
+              <Link href="/createcomponent" color="inherit">
+                Albums
+              </Link>
+              <Link href="/search" color="inherit">
+                Search
+              </Link>
+              <Link href="/edit" color="inherit">
+                Edit
+              </Link>
             </>
           ) : (
             <Typography className={classes.root1}>

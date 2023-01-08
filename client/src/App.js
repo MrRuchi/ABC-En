@@ -13,10 +13,12 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes exact index path="/" element={<Landing />}>
+          <Route exact path="/" element={<Landing />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/CreateComponent" element={<CreateComponent />} />
-          <Route exact path="/Search" element={<Search />} />
+          <Route exact path="/createcomponent" element={<CreateComponent />} />
+          <Route exact path="/search" element={<Search />} />
+          <Route exact path="/edit" element={<EditAlbum />} />
         </Routes>
       </div>
     </Router>
